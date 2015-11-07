@@ -1,13 +1,29 @@
 html
   head
+    script(src="js/jquery-min.js")
+    script(src="//www.parsecdn.com/js/parse-1.6.7.min.js")
+    link(rel="stylesheet",href="css/main.css")
   body
     div.fb-root
+    div#user-name
+    img#user-img
     div#nav
-       div.nav-el
-       My Matches
-       div.nav-el
-       My Friends
+       a.nav-el#nav-matches My Matches
+       a.nav-el#nav-friends My Friends
+       a#logout Logout
     div#content
+      div#content-main
+      div#fwb
+        h2 Friends With Benefits
+        div#fwb-content
+      div#owl
+        h2 You're Down But They're Not (Yet)
+        div#owl-ontent
+      div#friends
+        h2 My Friends
+        a(href="inviteFriends()") Invite Friends (Anonymously) Who Don't Use the App
+        div#friends-ontent
+
     script(src="js/main.js")
     script(src="js/fbinit.js")
       
